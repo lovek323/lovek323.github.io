@@ -1,25 +1,35 @@
-# This is the data for my blog
+# Bible Notes Series
 
-It is automatically transformed by [Jekyll](http://github.com/mojombo/jekyll)
-into a static site whenever I push this repository to GitHub.
+Format:
 
-Based on https://github.com/mojombo/mojombo.github.io
+- A note:
+  - About something interesting other than the passage itself but related to
+    this process
 
-I was tired of having my blog posts end up in a database off on some remote
-server. That is backwards. I've lost valuable posts that way. I want to author
-my posts locally in Textile or Markdown. My blog should be easily stylable and
-customizable any way I please. It should take care of creating a feed for me.
-And most of all, my site should be stored on GitHub so that I never lose data
-again.
+- The passage:
+  - When starting a new book, a very brief overview of the themes of the book
+  - A list of interesting things from the week's chapter
+  - The verse I selected to focus on
+  - An outline from a commentary I used (the IVP commentaries have been good)
+  - Why I chose the verse (or verses) from the chapter
+  - Discussion of the issues raised by the verse
 
-## License
+- References
 
-The following directories and their contents are Copyright Jason O'Conal.
-You may not reuse anything therein without my permission:
+## Weeks 1–5: 1 Peter
 
-* \_posts/
-* images/
+| Week | Passage   | Note                              |
+|------|-----------|-----------------------------------|
+| 1    | 1 Peter 1 | Overview of series and motivation |
+| 2    | 1 Peter 2 | Study process                     |
+| 3    | 1 Peter 3 | Selecting commentaries            |
+| 4    | 1 Peter 4 | Logos Bible Software              |
+| 5    | 1 Peter 5 | Authorship and date?              |
 
-All other directories and files are MIT Licensed. Feel free to use the HTML and
-CSS as you please. If you do use them, a link back to
-http://github.com/mojombo/jekyll would be appreciated, but is not required.
+## Weeks 6-9: 2 Peter
+
+| Week | Passage   | Note |
+|------|-----------|------|
+| 1    | 2 Peter 1 |      |
+| 2    | 2 Peter 2 |      |
+| 3    | 2 Peter 3 |      |

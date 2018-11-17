@@ -17,13 +17,18 @@ html, body {
 
 body {
   background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
+  font: 13px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+h1 {
+  font-size: 130%;
+}
+h2 {
+  font-size: 120%;
+}
+h3, h4, h5, h6 {
 }
 
 h1 {
@@ -49,6 +54,57 @@ a:visited {
 table {
   font-size: inherit;
   font: 100%;
+}
+
+blockquote {
+  background: #f3f3f3;
+  font-size: 90%;
+  margin: 1em 0 1em 4em;
+  padding: 0.5em;
+}
+blockquote > :first-child, blockquote > :last-child {
+  margin: 0;
+}
+blockquote > ul:first-child > li:first-child {
+  margin: 0;
+}
+blockquote > ul:last-child > li:last-child {
+  margin: 0;
+}
+
+li {
+  margin: 1em 0;
+}
+
+sup {
+  vertical-align: baseline;
+}
+sup:before {
+  content: " ["
+}
+sup:after {
+  content: "]"
+}
+
+.footnotes {
+  border-top: 4px solid #f3f3f3;
+}
+.footnotes:before {
+  content: "Notes";
+  display: block;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+dt {
+  margin-top: 1em;
+}
+dd {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+dd li {
+  margin: 0;
 }
 
 /*****************************************************************************/
@@ -152,51 +208,51 @@ ul.posts {
 
 }
 
-  /* standard */
+/* standard */
 
-  #post pre {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .4em;
-  }
+#post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
 
-  #post ul,
-  #post ol {
-    margin-left: 1.35em;
-  }
+#post ul,
+#post ol {
+  margin-left: 1.35em;
+}
 
-  #post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    font-size: 85%;
-    padding: 0 .2em;
-  }
+#post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  font-size: 85%;
+  padding: 0 .2em;
+}
 
-    #post pre code {
-      border: none;
-    }
+#post pre code {
+  border: none;
+}
 
-  #post img {
-    max-width: 42em;
-    padding: 1em 0;
-  }
+#post img {
+  max-width: 42em;
+  padding: 1em 0;
+}
 
-  /* terminal */
+/* terminal */
 
-  #post pre.terminal {
-    border: 1px solid black;
-    background-color: #333;
-    color: white;
-  }
+#post pre.terminal {
+  border: 1px solid black;
+  background-color: #333;
+  color: white;
+}
 
-  #post pre.terminal code {
-    background-color: #333;
-  }
+#post pre.terminal code {
+  background-color: #333;
+}
 
 #related {
   margin-top: 2em;
 }
 
-  #related h2 {
-    margin-bottom: 1em;
-  }
+#related h2 {
+  margin-bottom: 1em;
+}
