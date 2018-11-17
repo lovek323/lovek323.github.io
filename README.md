@@ -3,6 +3,8 @@
 It is automatically transformed by [Jekyll](http://github.com/mojombo/jekyll)
 into a static site whenever I push this repository to GitHub.
 
+Based on https://github.com/mojombo/mojombo.github.io
+
 I was tired of having my blog posts end up in a database off on some remote
 server. That is backwards. I've lost valuable posts that way. I want to author
 my posts locally in Textile or Markdown. My blog should be easily stylable and
@@ -12,7 +14,7 @@ again.
 
 ## License
 
-The following directories and their contents are Copyright Tom Preston-Werner.
+The following directories and their contents are Copyright Jason O'Conal.
 You may not reuse anything therein without my permission:
 
 * \_posts/
