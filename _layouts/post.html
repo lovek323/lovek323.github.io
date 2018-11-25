@@ -13,3 +13,18 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<script language="javascript" type="text/javascript">
+  $('h1').not(':first').wrap('<div class="spt-trackThis"></div>');
+  $('h2').wrap('<div class="spt-trackThis"></div>');
+  $('h3').wrap('<div class="spt-trackThis"></div>');
+  $('#TrackScrollProgress').progressTracker({
+    horTracker: false,
+    verTracker: true,
+    verStops: true,
+    verTitles: true,
+    verPosition: 'right',
+    trackAllHeadlines: true,
+    scrollSpeed: 1200
+  });
+</script>

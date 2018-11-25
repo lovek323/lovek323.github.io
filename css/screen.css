@@ -62,8 +62,11 @@ blockquote {
   margin: 1em 0 1em 4em;
   padding: 0.5em;
 }
-blockquote > :first-child, blockquote > :last-child {
-  margin: 0;
+blockquote > :first-child {
+  margin-top: 0;
+}
+blockquote > :last-child {
+  margin-bottom: 0;
 }
 blockquote > ul:first-child > li:first-child {
   margin: 0;
@@ -92,6 +95,7 @@ sup:after {
 .footnotes:before {
   content: "Notes";
   display: block;
+  font-size: 130%;
   font-weight: bold;
   margin: 1em 0;
 }
@@ -255,4 +259,24 @@ ul.posts {
 
 #related h2 {
   margin-bottom: 1em;
+}
+
+/* right navigation */
+.spt-stopTitle {
+  background: #fff;
+  margin-left: 0.5em;
+  margin-top: -1px !important;
+  padding-bottom: 10px;
+  padding-left: 0 !important;
+  padding-top: 4px;
+  text-align: left;
+  width: 100%;
+}
+
+/* table of contents */
+#markdown-toc {
+  margin-bottom: 1em;
+}
+#markdown-toc li {
+  margin: 0;
 }

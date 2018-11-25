@@ -28,8 +28,8 @@ Format:
 
 ## Weeks 6-9: 2 Peter
 
-| Week | Passage   | Note |
-|------|-----------|------|
-| 1    | 2 Peter 1 |      |
-| 2    | 2 Peter 2 |      |
-| 3    | 2 Peter 3 |      |
+| Week   | Passage     | Note                |
+| ------ | ----------- | ------------------- |
+| 1      | 2 Peter 1   | Lexham Bible Guides |
+| 2      | 2 Peter 2   |                     |
+| 3      | 2 Peter 3   |                     |
