@@ -22,14 +22,14 @@ Format:
 |------|-----------|-----------------------------------|
 | 1    | 1 Peter 1 | Overview of series and motivation |
 | 2    | 1 Peter 2 | Study process                     |
-| 3    | 1 Peter 3 | Selecting commentaries            |
-| 4    | 1 Peter 4 | Logos Bible Software              |
-| 5    | 1 Peter 5 | Authorship and date?              |
+| 3    | 1 Peter 3 |                                   |
+| 4    | 1 Peter 4 | Selecting commentaries            |
+| 5    | 1 Peter 5 | Logos Bible Software              |
 
 ## Weeks 6-9: 2 Peter
 
-| Week   | Passage     | Note                |
-| ------ | ----------- | ------------------- |
-| 1      | 2 Peter 1   | Lexham Bible Guides |
-| 2      | 2 Peter 2   |                     |
-| 3      | 2 Peter 3   |                     |
+| Week   | Passage     | Note                   |
+| ------ | ----------- | ---------------------- |
+| 1      | 2 Peter 1   | Authorship and date?   |
+| 2      | 2 Peter 2   | Lexham Bible Guides    |
+| 3      | 2 Peter 3   | Bible translation: NIV |
