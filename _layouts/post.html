@@ -2,6 +2,15 @@
 layout: default
 ---
 <div id="post">
+  {% capture words %}
+    {{ page.content | number_of_words | minus: 250 }}
+  {% endcapture %}
+  {% unless words contains "-" %}
+    <p class="meta">
+      {{ words | plus: 250 | divided_by: 180 | append: " minute read" }}
+    </p>
+  {% endunless %}
+
   {{ content }}
 </div>
 
