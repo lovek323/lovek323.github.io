@@ -275,3 +275,19 @@ ul.posts {
 #markdown-toc li {
   margin: 0;
 }
+
+/* references */
+#post .reference {
+    display: flex;
+}
+#post .reference p {
+    margin: 0;
+}
+#post .reference p img {
+    padding: 0;
+    padding-right: 10px;
+    width: 100px;
+}
+#post .reference .details {
+    width: 100%;
+}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2 Peter &ndash; What I Learnt
-tags: [bible,1-peter]
+tags: [bible,2-peter]
 ---
 
 {{ page.title }}
