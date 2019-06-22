@@ -1,0 +1,81 @@
+\documentclass[a4paper,12pt]{article}
+
+% Lwarp
+\usepackage[%
+    latexmk,
+    mathjax,
+]{lwarp}
+
+% Bibliography
+\usepackage[style=sbl,fullbibrefs]{biblatex}
+\addbibresource{../../bib/books.bib}
+\addbibresource{../../bib/commentaries.bib}
+\addbibresource{../../bib/commentary-series.bib}
+\addbibresource{../../bib/dictionaries-encyclopedias.bib}
+\addbibresource{../../bib/general-series.bib}
+\addbibresource{../../bib/journal-articles.bib}
+\addbibresource{../../bib/websites.bib}
+
+\usepackage[bookmarks,hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[multiple]{footmisc}
+
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{times}
+
+% Quotes
+\usepackage[autostyle,english=british]{csquotes}
+\DeclareQuoteStyle[american]{english}
+    {\textquotedblleft}
+    [\textquotedblleft]
+    {\textquotedblright}
+    [0.05em]
+    {\textquoteleft}
+    {\textquoteright}
+\DeclareQuoteStyle[american-verse]{english}
+    {\textquotedblleft}
+    {\textquotedblright}
+    [0.05em]
+    {\textquoteleft}
+    {\textquoteright}
+\DeclareQuoteStyle[british]{english}
+    {\textquoteleft}
+    [\textquoteleft]
+    {\textquoteright}
+    [0.05em]
+    {\textquotedblleft}
+    {\textquotedblright}
+\DeclareQuoteStyle[british-verse]{english}
+    {\textquoteleft}
+    {\textquoteright}
+    [0.05em]
+    {\textquotedblleft}
+    {\textquotedblright}
+% British
+\newcommand{\OpenQuote}{\textquoteleft}
+% American
+% \newcommand{\OpenQuote}{\textquotedblleft}
+
+% Lengths
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+
+% Poetry
+\newcommand{\VerseQuoteStyle}{\setquotestyle[british-verse]{english}}
+\newcommand{\NormalQuoteStyle}{\setquotestyle[british]{english}}
+\newcommand{\VerseIndent}{\hspace*{2em}}
+\newcommand{\VerseIndentTwo}{\hspace*{4em}}
+\newcommand{\VerseIndentFour}{\hspace*{8em}}
+
+\title{\Title}
+\author{Jason O'Conal}
+\date{\Date}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\printbiblist{abbreviations}
