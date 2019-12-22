@@ -7,39 +7,57 @@
 ]{lwarp}
 
 % Bibliography
-\usepackage[style=sbl,fullbibrefs]{biblatex}
-\addbibresource{../../bib/books.bib}
-\addbibresource{../../bib/commentaries.bib}
-\addbibresource{../../bib/commentary-series.bib}
-\addbibresource{../../bib/dictionaries-encyclopedias.bib}
-\addbibresource{../../bib/general-series.bib}
-\addbibresource{../../bib/journal-articles.bib}
-\addbibresource{../../bib/websites.bib}
+\usepackage[
+    citepages=omit,
+    fullbibrefs,
+    ibidtracker=false,
+    idemtracker=false,
+    style=sbl,
+]{biblatex}
+\addbibresource{../bib/books.bib}
+\addbibresource{../bib/commentaries.bib}
+\addbibresource{../bib/commentary-series.bib}
+\addbibresource{../bib/dictionaries-encyclopedias.bib}
+\addbibresource{../bib/general-series.bib}
+\addbibresource{../bib/journal-articles.bib}
+\addbibresource{../bib/websites.bib}
+\setlength{\bibhang}{0.5in}
 
+% Packages with arguments
 \usepackage[bookmarks,hidelinks]{hyperref}
+\usepackage[rm,tiny]{titlesec}
 \usepackage[english]{babel}
 \usepackage[margin=1in]{geometry}
-\usepackage[multiple]{footmisc}
+\usepackage[marginal]{footmisc}
 
+% Packages without arguments
+\usepackage{afterpage}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{longtable}
 \usepackage{paralist}
+\usepackage{ragged2e}
+\usepackage{scrextend}
+\usepackage{setspace}
 \usepackage{times}
+\usepackage{tocloft}
 
-% Quotes
+% Quotation marks -- British style
 \usepackage[autostyle,english=british]{csquotes}
-\DeclareQuoteStyle[american]{english}
-    {\textquotedblleft}
-    [\textquotedblleft]
-    {\textquotedblright}
-    [0.05em]
-    {\textquoteleft}
-    {\textquoteright}
-\DeclareQuoteStyle[american-verse]{english}
-    {\textquotedblleft}
-    {\textquotedblright}
-    [0.05em]
-    {\textquoteleft}
-    {\textquoteright}
+%\DeclareQuoteStyle[american]{english}
+    %{\textquotedblleft}
+    %[\textquotedblleft]
+    %{\textquotedblright}
+    %[0.05em]
+    %{\textquoteleft}
+    %{\textquoteright}
+%\DeclareQuoteStyle[american-verse]{english}
+    %{\textquotedblleft}
+    %{\textquotedblright}
+    %[0.05em]
+    %{\textquoteleft}
+    %{\textquoteright}
 \DeclareQuoteStyle[british]{english}
     {\textquoteleft}
     [\textquoteleft]
@@ -56,11 +74,7 @@
 % British
 \newcommand{\OpenQuote}{\textquoteleft}
 % American
-% \newcommand{\OpenQuote}{\textquotedblleft}
-
-% Lengths
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.5\baselineskip}
+%\newcommand{\OpenQuote}{\textquotedblleft}
 
 % Poetry
 \newcommand{\VerseQuoteStyle}{\setquotestyle[british-verse]{english}}
@@ -69,13 +83,102 @@
 \newcommand{\VerseIndentTwo}{\hspace*{4em}}
 \newcommand{\VerseIndentFour}{\hspace*{8em}}
 
-\title{\Title}
-\author{Jason O'Conal}
-\date{\Date}
+% Lengths
+\setlength{\parindent}{0.5in}
+\setlength{\RaggedRightParindent}{\parindent}
+
+% Line spacing
+\doublespacing{}
+
+% Justification
+\RaggedRight
+
+% Footnotes
+\setlength{\footnotesep}{19.86pt} % Determined by running \footnotesize \the\baselineskip
+\renewcommand{\footnoterule}{\noindent\smash{\rule[3pt]{2in}{0.4pt}}\vspace{-0.5\footnotesep}}
+\setlength{\footnotemargin}{0.5in}
+\deffootnote[0.5in]{0pt}{0.5in}{}
+\let\TempFootnote\footnote
+\renewcommand{\footnote}[1]{\TempFootnote{\thefootnotemark.\enskip#1}}
+\setlength{\skip\footins}{\baselineskip}
+
+% Table of contents
+\renewcommand\cftsecfont{\rm}
+\renewcommand\cftsecleader{\cftdotfill{.}}
+\renewcommand\cftsubsecdotsep{\cftnodots}
+
+% Word count
+%TC:newcounter fwords Words in footnotes
+%TC:newcounter footnote Number of footnotes
+%TC:macro \footnote [fwords]
+%TC:macroword \footnote [footnote]
+%TC:macro \autocite [fwords]
+%TC:macroword \autocite [footnote]
 
 \begin{document}
-\maketitle
 
+% Sections
+\setcounter{secnumdepth}{0}
+% - Section
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+\titleformat*{\section}{\center\uppercase}
+% - Subsection
+\titlespacing*{\subsection}{0pt}{\baselineskip}{0pt}
+\titleformat*{\subsection}{\center\bfseries}
+
+% Headers & Footers
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{first}{%
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+}
+\fancypagestyle{subsequent}{%
+    \fancyhf{}
+    \fancyhead[R]{\thepage}
+}
+\pagestyle{empty}
+\pagenumbering{roman}
+
+\mbox{}
+
+\vfill
+
+\begin{center}
+    \Huge{\textbf{\Title}}
+\end{center}
+
+
+\vfill
+
+\begin{center}
+    \Date
+\end{center}
+
+\vfill
+\newpage
+
+\pagestyle{plain}
+
+\mbox{}\vspace{1in} % Extra margin
+
+\renewcommand{\contentsname}{}
+\section*{CONTENTS}
 \tableofcontents
 
-\printbiblist{abbreviations}
+\vfill
+\newpage
+
+\mbox{}\vspace{1in} % Extra margin
+
+\printbiblist[title=ABBREVIATIONS]{abbreviations}
+
+\vfill
+\newpage
+
+\pagestyle{subsequent}
+
+\thispagestyle{first}
+
+\pagenumbering{arabic}
+
+\mbox{}\vspace{1in} % Extra margin
