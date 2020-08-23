@@ -1,4 +1,6 @@
+*-flat.tex
 *.swp
+*.synctex.gz
 .DS_Store
 .jekyll-metadata
 .sass-cache
