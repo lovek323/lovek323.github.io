@@ -25,10 +25,10 @@
 
 % Packages with arguments
 \usepackage[bookmarks,hidelinks]{hyperref}
-\usepackage[rm,tiny]{titlesec}
 \usepackage[english]{babel}
 \usepackage[margin=1in]{geometry}
 \usepackage[marginal]{footmisc}
+\usepackage[rm,tiny]{titlesec}
 
 % Packages without arguments
 \usepackage{afterpage}
@@ -36,7 +36,6 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{longtable}
-\usepackage{paralist}
 \usepackage{ragged2e}
 \usepackage{scrextend}
 \usepackage{setspace}
@@ -44,8 +43,13 @@
 \usepackage{tocloft}
 \usepackage{xcolor}
 
+% enumitem must be loaded after paralist
+\usepackage{paralist}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
 % Quotation marks -- British style
-\usepackage[autostyle,english=british]{csquotes}
+\usepackage[autostyle,english=british,maxlevel=3]{csquotes}
 %\DeclareQuoteStyle[american]{english}
     %{\textquotedblleft}
     %[\textquotedblleft]
